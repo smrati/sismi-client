@@ -5,5 +5,4 @@ print(mem.percent)
 
 disks = psutil.disk_partitions()
 for disk in disks:
-    if 'snap' not in disk.mountpoint:
-        print(disk.mountpoint, " ------> ", psutil.disk_usage(disk.mountpoint).percent)
+    print(disk.mountpoint, " ------> ", psutil.disk_usage(disk.mountpoint).percent)
